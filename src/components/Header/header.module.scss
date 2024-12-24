@@ -1,0 +1,12 @@
+.logo{
+  width: 90px;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--active {
+    color: lightgrey;
+  }
+}

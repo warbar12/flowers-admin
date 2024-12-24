@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Typography, Button, Box } from "@mui/material";
 import { NavLink } from "react-router-dom";
-import * as routes from "../../constants/routes";
+import {DASHBOARD, LOGIN} from "../../constants/routes";
 import style from "./notFound.module.scss";
 
 const NotFound = ({ isAuthenticated }) => {
-  const targetRoute = isAuthenticated ? routes.DASHBOARD : routes.LOGIN;
+  const targetRoute = isAuthenticated ? DASHBOARD : LOGIN;
 
   return (
     <Container  className={style.notFound}>

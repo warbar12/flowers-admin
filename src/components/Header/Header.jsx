@@ -40,7 +40,7 @@ const Header = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const toggleDrawer = () => {
-    setDrawerOpen(!drawerOpen);
+    setDrawerOpen((prevState) => !prevState);
   };
 
   const handleLogout = () => {
